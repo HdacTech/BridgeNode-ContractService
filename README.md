@@ -36,12 +36,15 @@ All library files are managed by nfsserver, copy the contractLib jar file to the
 
 >1. Operate nfsserver docker container
 >2. Operate contract docker container
->3. Checking share library inside anchoring container  
+>3. Checking share library inside contract container  
 >- $ docker exec -it contract bash  
->- $ cd contract/shareLib  
+>- $ cd /opt/contract/shareLib  
 >4. configure database config file and CRONTAB shedule (contract/com/hdac/config, crontab -e)
 >5. After configuration, start crontab serivce  
 >- $ systemctl start crond
+
+
+_A detailed description of the docker setting and operation can be found here [Bridgenode docker hub](https://hub.docker.com/r/hdac/bridgenode)._
 
 
 
